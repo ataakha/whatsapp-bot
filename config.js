@@ -5,6 +5,7 @@ you may not use this file except in compliance with the License.
 
 WhatsAsena - Yusuf Usta
 */
+prefix: "."
 
 const { Sequelize } = require("sequelize")
 const fs = require("fs")
@@ -26,7 +27,7 @@ DEBUG =
 module.exports = {
   VERSION: "v1.2.8",
   SESSION:
-    process.env.ASENA_SESSION === undefined ? "" : process.env.ASENA_SESSION,
+    process.env.ASENA_SESSION === undefined ? "levanter_952b5504e8bde49d5ba1d5fa6381cfbde" : process.env.ASENA_SESSION,
   EXT: process.env.EXT === undefined ? undefined : process.env.EXT,
   LANG:
     process.env.LANGUAGE === undefined
